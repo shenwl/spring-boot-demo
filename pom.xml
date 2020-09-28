@@ -27,10 +27,20 @@
             <plugin>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.22.0</version>
+                <configuration>
+                    <excludes>
+                        <exclude>**/*Integration</exclude>
+                    </excludes>
+                </configuration>
             </plugin>
             <plugin>
                 <artifactId>maven-failsafe-plugin</artifactId>
                 <version>2.22.0</version>
+                <configuration>
+                    <includes>
+                        <include>**/*Integration</include>
+                    </includes>
+                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.flywaydb</groupId>
