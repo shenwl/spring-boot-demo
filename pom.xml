@@ -32,6 +32,16 @@
                 <artifactId>maven-failsafe-plugin</artifactId>
                 <version>2.22.0</version>
             </plugin>
+            <plugin>
+                <groupId>org.flywaydb</groupId>
+                <artifactId>flyway-maven-plugin</artifactId>
+                <version>7.0.0</version>
+                <configuration>
+                    <user>shenwl</user>
+                    <password>shenwl</password>
+                    <url>jdbc:mysql://localhost:3306/testdb</url>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 
